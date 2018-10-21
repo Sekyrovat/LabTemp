@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<body id="bodyRegister">
+
+		<!-- We group the title, link to css, meta
+			 and h1 tag since we won't be
+			 using it for anything else -->
+		<header>
+			<head>
+				<title>Register</title>
+				<link rel="stylesheet" type="text/css" href="./css/style1.css">
+				<link rel="stylesheet" type="text/css" href="./css/styleGeneral.css">
+				<meta charset="utf-8"/>
+			</head>
+			<h1>The jammer</h1>
+		</header>
+		
+		<!-- Now we begin with the main part -->
+		<main lang="en-US" id="content">
+			<!-- The following section is dedicated 
+				 to the form used to register new users. -->
+			<section id="registration">
+				<h2>New User</h2>
+					<form id="registrationForm">
+						<fieldset>
+							<legend>New User</legend>
+							
+							<span>Name</span> 
+							<input class="endLines widthModifier" type="text" name="userFname" id="registrationUserFname">
+							<span class="errorMsg endLines" id="errorFName"></span>
+							
+							<span>Lastname</span> 
+							<input class="endLines widthModifier" type="text" name="userLname" id="registrationUserLname">
+							<span class="errorMsg endLines" id="errorLName"></span>
+							
+							<span>Username</span> 
+							<input class="endLines widthModifier" type="text" name="userName" id="registrationUserName">
+							<span class="errorMsg endLines" id="errorUName"></span>
+							
+							<span>Email</span>
+							<input class="endLines widthModifier" type="text" name="userEmail" id="registrationUserEmail">
+							<span class="errorMsg endLines" id="errorEmail"></span>
+							
+							<span>Password</span>
+							<input class="endLines widthModifier" type="password" name="pass1" id="registrationUserPass1">
+							<span class="errorMsg endLines" id="errorPass1"></span>
+							
+							
+							<span>Password Confirmation</span>
+							<input class="endLines widthModifier" type="password" name="pass2" id="registrationUserPass2">
+							<span class="errorMsg endLines" id="errorPass2"></span>
+							
+							<h4>Gender</h4>
+							<span class="errorMsg endLines" id="errorGender"></span>
+							<label>
+								Female 
+								<input name="genderRadioButton" type="radio" class="gender endLines" id="femaleGen" value="0"> 
+							</label>
+							<label>
+								Male 
+								<input name="genderRadioButton" type="radio" class="gender endLines" id="maleGen" value="1">
+							</label>
+							
+							<h4>Native Country</h4>
+							<span class="errorMsg endLines" id="errorCountry"></span>
+							<select class="endLines" id="natCountry" name="countrySelect">
+								<option value = "0" selected="selected">Please select a country</option>
+								<option value = "arg"> Aregentina </option>
+								<option value = "can"> Canada </option>
+								<option value = "cos"> Costa Rica </option>
+								<option value = "egy"> Egypt </option>
+								<option value = "ger"> Germany </option>
+								<option value = "gre"> Greece </option>
+								<option value = "ice"> Iceland </option>
+								<option value = "ire"> Ireland </option>
+								<option value = "mac"> Macao </option>
+								<option value = "mex"> Mexico </option>
+								<option value = "mon"> Monaco </option>
+								<option value = "pak"> Pakistan </option>
+								<option value = "rus"> Russia </option>
+								<option value = "sou"> South Korea </option>
+								<option value = "usa"> Unites States</option>
+							</select>
+
+							<input type="submit" name="registerButton" value="Register" class="buttons" id="registerSubmit">
+
+							<input type="submit" name="reset" id="resetBtn" class="buttons" value="Reset Info">
+						</fieldset>
+					</form>
+			</section>
+
+			<section id="slides">
+				<img class="mySlides" src="./img/slide1.jpg" style="width:100%">
+				<img class="mySlides" src="./img/slide5.jpg" style="width:100%">
+				<img class="mySlides" src="./img/slide3.jpg" style="width:100%">
+			
+				<script>
+					var myIndex = 0;
+					carousel();
+
+					function carousel() 
+					{
+					    var i;
+					    var x = document.getElementsByClassName("mySlides");
+					    for (i = 0; i < x.length; i++)
+					    {
+					       x[i].style.display = "none";
+					    }
+					    myIndex++;
+					    if (myIndex > x.length) 
+					    {
+					    	myIndex = 1;
+					    }
+					    x[myIndex-1].style.display = "block";
+					    setTimeout(carousel, 3000);
+					}
+				</script>
+			</section>
+			
+		</main>
+
+		<section id="scriptContainer" class="hideElement">
+			<script src="https://code.jquery.com/jquery-3.3.1.js" 
+				integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+			<script type="text/javascript" src="./js/registerJq.js"></script>
+		</section>
+	</body>
+</html>

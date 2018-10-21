@@ -1,0 +1,84 @@
+/*Default styles for the whole body of the page*/
+body{
+	color: black;
+	background: url("./../img/initial.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*Values for the footer of the mmain login page*/
+footer{
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 9em;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+	background: url("./../img/jammer_logo.png") no-repeat bottom center rgba(153, 187, 255, 0.8);
+}
+
+/*Values for the main header*/
+h1{
+	font-size: 5em;
+}
+
+div{
+	border-radius: 50px;
+}
+
+.centeringContainer{
+	margin-top: 10em;
+	height: 5em;
+    position: relative;
+    border: none;
+    width: 15em;
+}
+
+.centeringContainer input{
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#loginDiv{
+	left: 5%;
+	background-color: rgba(51, 102, 0, 0.8);
+}
+
+#registerDiv{
+	left: 80%;
+	margin-top: 15em;
+	background-color: rgba(128, 128, 128, .9);
+}
+
+#register{
+	background: #b3d9ff;
+	color: black;
+}
+
+#login{
+	background-color: #00b38f;
+	color: black;
+}
+
+#register:hover{
+	background-color: #66b3ff;
+}
+
+#login:hover{
+	background-color: #008066;
+}
+
+.centeringContainer:hover{
+	cursor: pointer;
+}
+
+.buttons{
+	margin: 3em 2px;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+		
+	<header>
+		<head>
+			<title>Home</title>
+			<link rel="stylesheet" type="text/css" href="../css/style2.css">
+			<link rel="stylesheet" type="text/css" href="../css/styleGeneral.css">
+			<link rel="stylesheet" type="text/css" href="../css/styleNavs.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<meta charset="utf-8"/>
+		</head>
+	</header>
+
+
+	<body id="homePage">
+		<section id="navigationBars">
+			<section role="Top navigation menu">
+				<div class="topNav">
+					<input type="button" id="logoutBtn" value="Logout"/>
+					<a class="active" href="#home">Home</a>
+					<a href="#newsPage">News</a>
+					<a href="#proScenePage">Pro Scene</a>
+					<a href="#gamesPage">Games</a>
+					<a href="#friendsPage">Friends</a>
+					<a href="#teamPage">Teams</a>
+					<a href="#goalsPage">Goals</a>
+					<a href="profile.html" id="accountInfo">My Account</a>
+					<input type="text" placeholder="Search..">
+				</div> 
+			</section>
+		</section>
+
+		<h1> Welcome to your news feed</h1>
+		
+		<main>
+
+			<section id="new" class="cards">
+				<h2>New Post</h2>
+				<img src="" id="userProfilePicOwner">
+				<input class="buttons" type="file" id="userNewPic" accept="image/*">
+				<button class="btn" id="cancelImage"><i class="fa fa-close"></i></button><br>
+				<input type="text" placeholder="Doing something?" id="newPostText"><br>
+				<input class="buttons" type="submit" value="newPost" id="newPostButton">
+			</section>
+
+			<section id="mainContent">
+				 <section class="cards">
+					<h3 name='user' class='postOwner'> User</h3>
+					<img src="" class="userProfilePic">
+					<img src="./../img/test1.png" name='image' class='postImage'>
+					<p name='text' class='postText'>
+						I can't believe it :D XD
+					</p>
+				</section>
+
+				<section class="cards">
+					<h3 name='user' class='postOwner'> User</h3>
+					<img src="" class="userProfilePic">
+					<img src="./../img/test2.jpg" name='image' class='postImage'>
+					<p name='text' class='postText'>
+						HOLY SHOOOOT
+					</p>
+				</section>
+
+				<section class="cards">
+					<h3 name='user' class='postOwner'> User</h3>
+					<img src="" class="userProfilePic">
+					<img src="./../img/test3.jpg" name='image' class='postImage'>
+					<p name='text' class='postText'>
+						Anyone up for some old style battlefront?
+					</p>
+				</section>
+
+				<section class="cards">
+					<h3 name='user' class='postOwner'> User</h3>
+					<img src="" class="userProfilePic">
+					<img src="./../img/test4.jpg" name='image' class='postImage'>
+					<p name='text' class='postText'>
+						So uhm, I've been stuck for over an hour. Can anybody help me?
+					</p>
+				</section>
+				
+
+				<!-- The label is used to make the whole card a button to call the modal. -->
+				<label class="modalCaller">
+					<section class="cards">
+						<h3 name='user' class='postOwner'> User</h3>
+						<img src="" class="userProfilePic">
+						<img src="./../img/test5.jpg" name='image' class='postImage'>
+						<p name='text' class='postText'>
+							Can anyone tell me if this is a scary game? My brother said I'd have fun.
+						</p>
+					</section>
+				</label> 
+			</section>
+
+			<!-- Trigger the modal with a button -->
+			<!-- <button type="button" class="btn btn-success openBtn">Open Modal</button> -->
+
+			<!-- Modal -->
+			<!-- <div class="modal fade" id="myModal" role="dialog"> -->
+			    <!-- <div class="modal-dialog"> -->
+			        <!-- Modal content-->
+			        <!-- <div class="modal-content"> -->
+			            <!-- <div class="modal-header"> -->
+			                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+			                <!-- <h4 class="modal-title">Modal with Dynamic Content</h4> -->
+			            <!-- </div> -->
+			            <!-- <div class="modal-body"> -->
+
+			            <!-- </div> -->
+			            <!-- <div class="modal-footer"> -->
+			                <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+			            <!-- </div> -->
+			        <!-- </div> -->
+			    <!-- </div> -->
+			<!-- </div> -->
+
+		</main>
+
+		<section id="scriptContainer" class="hideElement">
+			<script src="https://code.jquery.com/jquery-3.3.1.js" 
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+			<script type="text/javascript" src="../js/homeJq.js"></script>
+			<script type="text/javascript" src="../js/commentLoaderJq.js"></script>
+			<script type="text/javascript" src="../js/navSelection.js"></script>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		</section>
+	</body>
+</html>

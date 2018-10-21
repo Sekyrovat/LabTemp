@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+		
+	<header>
+		<head>
+			<title>My Account</title>
+			<link rel="stylesheet" type="text/css" href="../css/style2.css">
+			<link rel="stylesheet" type="text/css" href="../css/styleGeneral.css">
+			<link rel="stylesheet" type="text/css" href="../css/styleNavs.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<meta charset="utf-8"/>
+		</head>
+	</header>
+
+
+	<body id="profilePage">
+		<section id="navigationBars">
+			<section role="Top navigation menu">
+				<div class="topNav">
+					<input type="button" id="logoutBtn" value="Logout"/>
+					<a href="./homePage.html">Home</a>
+					<a href="#newsPage">News</a>
+					<a href="#proScenePage">Pro Scene</a>
+					<a href="#gamesPage">Games</a>
+					<a href="#friendsPage">Friends</a>
+					<a href="#teamPage">Teams</a>
+					<a href="#goalsPage">Goals</a>
+					<a class="active" href="profile.html" id="accountInfo">My Account</a>
+					<input type="text" placeholder="Search..">
+				</div> 
+			</section>
+		</section>
+
+		<h1> Welcome to your profile</h1>
+		
+		<main id="profileMain">
+			<h2>My info</h2>
+			<div  id="userAccountInfo">
+
+			</div>
+			<br>
+			<section>
+				<h3>Change Avatar</h3>
+				<input class="buttons" type="file" id="userNewPic" accept="image/*"> <br>
+				<input type="submit" name="newPicSubmit" value="Submit" id="newPicSubmit" class="buttons">
+			</section>
+		</main>
+
+		<section id="scriptContainer" class="hideElement">
+			<script src="https://code.jquery.com/jquery-3.3.1.js" 
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+			<script type="text/javascript" src="../js/navSelection.js"></script>
+			<script type="text/javascript" src="../js/infoLoaderJq.js"></script>
+		</section>
+	</body>
+</html>

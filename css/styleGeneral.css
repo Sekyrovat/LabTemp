@@ -1,0 +1,39 @@
+body{
+	font-family: Verdana, sans-serif;
+	/*We will be using em for scaling*/
+	font-size: 1em;
+	color: black;
+	margin: 0;
+	padding: 0;
+    text-decoration: none;
+    letter-spacing: .001em;
+    word-spacing: .01em;
+}
+
+h1{
+	font-size: 2em;
+	margin: 1em;
+	padding: 0;
+	color: #0039e6;
+	text-align: center;
+	position: relative;
+}
+
+.buttons{
+	border-radius: 50px;
+	margin: 1em;
+	width: 15em;
+	border: none;
+    color: white;
+    padding: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.buttons:hover{
+	cursor: pointer;
+}
+.hideElement{
+    display : none;
+}

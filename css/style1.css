@@ -1,0 +1,161 @@
+/*Default styles for the whole body of the page*/
+#bodyRegister{
+	background: url("./../img/indexBackGround.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#bodylogin{
+	background: url("./../img/login.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*Values for the heading of the forms*/
+h2{
+	font-size: 1.5em;
+	margin: 0.1em;
+	padding: 0.5em;
+	color: rgb(0,0,175);
+	text-align: center;
+	position: relative;
+}
+
+section{
+	float: left;
+	line-height: 1em;
+	position: relative;
+	width: 18em;
+	background-color: rgba(153, 153, 153, 0.9);
+	border: .4em solid black;
+	overflow: hidden;
+	margin: 2em;
+	padding: .1em;
+	display: inline-block;
+}
+
+section#registration{
+	margin-bottom: .5em;
+	width: 20em;
+}
+
+section#login{
+	left: 1em;
+	width: 20em;
+}
+
+section#slides{
+	background-color: rgba(128, 128, 128, 0.7);
+	width: 55em;
+	left: 25em;
+	top: 5em;
+	border: 1em solid rgba(0, 0, 0, 0.6);
+}
+
+form{
+	margin: 0.2em;
+	border: 3px solid #73AD21;
+}
+
+legend{
+	color: rgb(51, 255, 51);
+	text-align: left;
+	position: relative;
+	font-size: 1.2em;
+	padding: .5em;
+	margin: .5em;
+	font-weight: 400;
+}
+
+fieldset{
+	margin: 1em;
+	padding: 1em;
+	color: black;
+	position: relative;
+	border: dashed;
+	display: block;
+}
+
+#genderContainer{
+	margin: 10px;
+	padding: 10px;
+	position: relative;
+	border-style: none;
+	display: block;
+}
+
+input[type=text||password]{
+	font-size: 12px;
+	padding: 12px 20px;
+	margin: 10px 0;
+	position: relative;
+	box-sizing: border-box;
+}
+
+input[type=text||password]:focus{
+    border: 3px solid #555;
+}
+
+.widthModifier{
+	margin-top: 0.2em;
+	width: 15em;
+}
+input[type=checkbox]{
+    width:1em;
+    height:30px;
+    background:white;
+    border-radius:.05em;
+    border:2px solid #555;
+}
+
+select{
+    border: none;
+    border-radius: .5em;
+    background-color: #f1f1f1;
+    width: 15em;
+    max-width: 20em;
+    min-width: 10em;
+    height: 2em;
+}
+
+.buttons{
+	margin: 1em 2px;
+    padding: 1em 2em;
+}
+
+fieldset > input.buttons:hover{
+	border: 0.5em gray;
+}
+
+#forgot, #resetBtn{
+	background: #9999ff;
+}
+#forgot, #resetBtn:hover{
+	background: #6666ff;
+}
+
+#loginSubmit, #registerSubmit{
+	background: #248f24;
+}
+#loginSubmit,#registerSubmit:hover{
+	background: #1f7a1f;
+}
+
+.errorMsg{
+	background: none;
+	color: red;
+	border: none;
+	background-size: 0px;
+	border: none;
+	display: inline;
+	padding: 0px;
+}
+
+.endLines{
+	display: block;
+	content: "\A";
+	white-space: pre;
+	margin-bottom: 0.6em;
+}	

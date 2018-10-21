@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<body id="bodylogin">
+
+		<!-- We group the title, link to css, meta
+			 and h1 tag since we won't be
+			 using it for anything else -->
+		<header>
+			<head>
+				<title>The Jammer</title>
+				<link rel="stylesheet" type="text/css" href="./css/style1.css">
+				<link rel="stylesheet" type="text/css" href="./css/styleGeneral.css">
+				<meta charset="utf-8"/>
+			</head>
+			<h1>The jammer</h1>
+		</header>
+		
+		<!-- Now we begin with the main part -->
+		<main lang="en-US" id="content">
+			<section id="login">
+				<h2>Already a user?</h2>
+				<form method="POST" id="loginForm" role="Form for regular user login." action="./html/homePage.html">
+					<fieldset>
+						<legend>Login</legend>
+						
+						<span>Username</span>
+						<input class="endLines" type="text" name="userName" id="loginUserName">
+						<span class="errorMsg endLines" id="userNameError"></span>
+
+						<span>Password</span> 
+						<input class="endLines"type="password" name="pass1" id="loginUserPass">
+						<span class="errorMsg endLines" id="userPassError"></span>
+
+						<label class="remlabel">
+							Remember Me
+							<input type="checkbox" name="remember" id="loginRemMe">
+							<span class="checkmark"></span>
+						</label>
+
+						<input type="submit" name="loginButton" value="Login" id="loginSubmit" class="buttons">
+					</fieldset>
+				</form>
+				<input type="submit" name="forgot" value="Forgot Password?" id="forgot" class="buttons">
+			</section>
+
+			<section id="slides">
+				<img class="mySlides" src="./img/slide4.jpg" style="width:100%">
+				<img class="mySlides" src="./img/slide2.jpg" style="width:100%">
+				<img class="mySlides" src="./img/slide6.jpg" style="width:100%">
+				  
+				<script>
+					var myIndex = 0;
+					carousel();
+
+					function carousel() 
+					{
+					    var i;
+					    var x = document.getElementsByClassName("mySlides");
+					    for (i = 0; i < x.length; i++)
+					    {
+					       x[i].style.display = "none";
+					    }
+					    myIndex++;
+					    if (myIndex > x.length) 
+					    {
+					    	myIndex = 1;
+					    }
+					    x[myIndex-1].style.display = "block";
+					    setTimeout(carousel, 3000);
+					}
+				</script>
+			</section>
+
+		</main>
+
+		<section id="scriptContainer" class="hideElement">
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.js"></script>
+			<script src="https://code.jquery.com/jquery-3.3.1.js" 
+				integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+			<script type="text/javascript" src="./js/loginIndexJq.js"></script>
+		</section>
+
+	</body>
+</html>
